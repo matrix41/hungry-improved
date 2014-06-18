@@ -5,6 +5,7 @@ puts "=-=-=-=-=-="
 appetizers = [ "nachos", "mozerrella sticks", "chips and salsa"]
 entrees = [ "hamburger", "chicken strips", "fried chicken"]
 desserts = [ "chocolate cake", "apple pie"]
+drinks = [ "coke", "sprite", "lemonade", "diet coke", "water"]
 
 # Initialize an empty array to hold the user-selected menu items 
 users_order = []
@@ -27,6 +28,7 @@ end
 # a different food array. 
 print_function( appetizers, users_order )
 print_function( entrees,    users_order )
+print_function( drinks,    users_order )
 print_function( desserts,   users_order )
 puts "=-=-=-=-=-="
 
