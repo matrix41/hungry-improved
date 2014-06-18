@@ -43,9 +43,20 @@ users_order.each_with_index do |item, index|
    puts " * #{ users_order[index] }"
 end
 
+# http://pleac.sourceforge.net/pleac_ruby/hashes.html
+# http://www.slideshare.net/nirusuma/ruby-arrays-hashes-examples-16776638
+# http://www.tutorialspoint.com/ruby/ruby_hashes.htm
+
+
 note.each_key { |food_notes| 
    puts "#{food_notes} is #{note[food_notes]}."
 }
 
+puts "-*-*-*-*-*-*-*-*-*-*-*-*-"
+note.each { |k,v| puts "#{k} => #{v}"}
+puts "-*-*-*-*-*-*-*-*-*-*-*-*-"
 
+puts "-+-+-+-+-+-+-+-+-+-+-+-+-"
+p note
+puts "-+-+-+-+-+-+-+-+-+-+-+-+-"
 puts "Come again soon!"
