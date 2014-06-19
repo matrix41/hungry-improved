@@ -45,7 +45,6 @@ def print_function( hash, users_order )
    hash.each_key do |key|
       puts "#{key}" 
 #      puts "#{key} #{hash[key]}" # THIS WORKS!!
-#      puts "#{index}: #{item}"
    end
 # Step 2 of 4: Prompt and record customer food selection 
    puts "Make your food selection here --> "
@@ -56,10 +55,6 @@ def print_function( hash, users_order )
    hash[selection] = customer_note
 # Step 4 of 4: Shove customer food selection and customer food notes into hash 
    users_order[selection] = "#{hash[selection]}"
-#   users_order << "#{hash[selection]}"
-
-#   note[array] = "no pickles"
-#   puts "You entered --> #{array[selection]}"
 end
 
 # Start the main body of the program here.  
