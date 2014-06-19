@@ -73,21 +73,13 @@ puts "=-=-=-=-=-="
 
 # Print out a summary of user-selected order 
 puts "Here is a summary of your order: "
-users_order.each_with_index do |item, index|
-   puts " *#{item} : #{ users_order[index] }"
+users_order.each_key do |key|
+   puts " * You ordered #{key} with #{ users_order[key] }."
 end
 
 # http://pleac.sourceforge.net/pleac_ruby/hashes.html
 # http://www.slideshare.net/nirusuma/ruby-arrays-hashes-examples-16776638
 # http://www.tutorialspoint.com/ruby/ruby_hashes.htm
-
-puts "-_-_-_-_-_-_-_-_-_-_-_-_-_-"
-# note.each_key { |food_notes| 
-#    puts "#{food_notes} is #{note[food_notes]}."
-# }
-appetizers.each { |key, value| puts "#{key} #{value}"}
-puts "#{desserts['note']}"
-puts "-_-_-_-_-_-_-_-_-_-_-_-_-_-"
 
 puts " "
 
