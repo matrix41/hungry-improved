@@ -1,21 +1,7 @@
 puts "Welcome to Restaurant720"
 puts "=-=-=-=-=-="
 
-# Initialize the three food arrays for appetizers, entrees, and desserts
-# appetizers = [ "nachos", "mozerrella sticks", "chips and salsa", "SKIP"]
-# app_hash = { appetizers => 'note'}
-# entrees = [ "hamburger", "chicken strips", "fried chicken", "SKIP"]
-# desserts = [ "chocolate cake", "apple pie", "SKIP"]
-# drinks = [ "coke", "sprite", "lemonade", "diet coke", "water", "SKIP"]
-## note = { 'appetizers' => 'note', 'entrees' => 'note', 'desserts' => 'note', 'drinks' => 'note'}
-
-
-# appetizers = { '[ "nachos", "mozerrella sticks", "chips and salsa", "SKIP"]' => 'note' }
-# entrees = { '[ "hamburger", "chicken strips", "fried chicken", "SKIP"]' => 'note' }
-# desserts = { '[ "chocolate cake", "apple pie", "SKIP"]' => 'note' }
-# drinks = { '[ "coke", "sprite", "lemonade", "diet coke", "water", "SKIP"]' => 'note' }
-
-
+# Initialize the four food hashes for appetizers, entrees, desserts, and drinks 
 appetizers = { "nachos" => 'note', 
                "mozzerella sticks" => 'note', 
                "chips and salsa" => 'note' } 
@@ -31,7 +17,6 @@ drinks = { "coke" => 'note',
            "sprite" => 'note', 
            "lemonade" => 'note', 
            "diet coke" => 'note' }
-
 
 
 # Initialize an empty hash to hold the customer-selected menu items 
