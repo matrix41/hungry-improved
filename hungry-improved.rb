@@ -53,10 +53,6 @@ print_function( entrees,    users_order )
 print_function( drinks,     users_order )
 print_function( desserts,   users_order )
 
-# http://pleac.sourceforge.net/pleac_ruby/hashes.html
-# http://www.slideshare.net/nirusuma/ruby-arrays-hashes-examples-16776638
-# http://www.tutorialspoint.com/ruby/ruby_hashes.htm
-
 puts " "
 puts "-*-*-*-*-*-*-*-*-*-*-*-*-"
 puts "-*-*-*-*-*-*-*-*-*-*-*-*-"
