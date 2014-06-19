@@ -1,3 +1,13 @@
+require 'twilio-ruby'
+
+# put your own credentials here
+account_sid = 'AC1450a935aad2a88da38727bef47b5cb9'
+auth_token  = 'f51667295646de2ef0a7a1b489761be1'
+
+# set up a client to talk to the Twilio REST API
+client = Twilio::REST::Client.new account_sid, auth_token
+
+
 puts "Welcome to Restaurant720"
 puts "=-=-=-=-=-="
 
@@ -56,12 +66,25 @@ print_function( desserts,   users_order )
 puts " "
 puts "-*-*-*-*-*-*-*-*-*-*-*-*-"
 puts "-*-*-*-*-*-*-*-*-*-*-*-*-"
+# Create array to hold twilio order
+twilio_output = []
 # Print out a summary of customer order 
 puts "Here is a summary of your order: "
 users_order.each_key do |key|
    puts " * You ordered #{key} with #{ users_order[key] }."
+   twilio_output << "You ordered #{key} with #{ users_order[key] }. "
 end
 puts "-+-+-+-+-+-+-+-+-+-+-+-+-"
 puts "-+-+-+-+-+-+-+-+-+-+-+-+-"
 puts " "
 puts "Come again soon!"
+twilio_output << "Come again soon!"
+
+# puts "#{twilio_output}"
+# send sms
+# note to self: must include "1" before the phone number
+client.account.messages.create(
+  :from => '+18182769431',
+  :to => '+18187202477',
+  :body => twilio_output
+)
