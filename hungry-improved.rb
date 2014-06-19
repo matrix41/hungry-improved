@@ -56,7 +56,7 @@ print_function( desserts,   users_order )
 puts " "
 puts "-*-*-*-*-*-*-*-*-*-*-*-*-"
 puts "-*-*-*-*-*-*-*-*-*-*-*-*-"
-# Print out a summary of user-selected order 
+# Print out a summary of customer order 
 puts "Here is a summary of your order: "
 users_order.each_key do |key|
    puts " * You ordered #{key} with #{ users_order[key] }."
