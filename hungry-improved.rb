@@ -47,32 +47,25 @@ end
 
 # Start the main body of the program here.  
 # Make four function calls. Each time use 
-# a different food array. 
+# a different food hash/food course. 
 print_function( appetizers, users_order )
 print_function( entrees,    users_order )
 print_function( drinks,     users_order )
 print_function( desserts,   users_order )
-puts "=-=-=-=-=-="
-
-# Print out a summary of user-selected order 
-puts "Here is a summary of your order: "
-users_order.each_key do |key|
-   puts " * You ordered #{key} with #{ users_order[key] }."
-end
 
 # http://pleac.sourceforge.net/pleac_ruby/hashes.html
 # http://www.slideshare.net/nirusuma/ruby-arrays-hashes-examples-16776638
 # http://www.tutorialspoint.com/ruby/ruby_hashes.htm
 
 puts " "
-
 puts "-*-*-*-*-*-*-*-*-*-*-*-*-"
-# note.each { |k,v| puts "#{k} => #{v}"}
 puts "-*-*-*-*-*-*-*-*-*-*-*-*-"
-
+# Print out a summary of user-selected order 
+puts "Here is a summary of your order: "
+users_order.each_key do |key|
+   puts " * You ordered #{key} with #{ users_order[key] }."
+end
+puts "-+-+-+-+-+-+-+-+-+-+-+-+-"
+puts "-+-+-+-+-+-+-+-+-+-+-+-+-"
 puts " "
-
-puts "-+-+-+-+-+-+-+-+-+-+-+-+-"
-# p note
-puts "-+-+-+-+-+-+-+-+-+-+-+-+-"
 puts "Come again soon!"
