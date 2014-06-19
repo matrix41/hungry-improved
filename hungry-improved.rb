@@ -31,6 +31,9 @@ def print_function( hash, users_order )
       puts "#{key}" 
 #      puts "#{key} #{hash[key]}" # THIS WORKS!!
    end
+   puts "Skip this food course (y/n)?"
+   user_skip = gets().chomp()
+   return if user_skip.match('y')
 # Step 2 of 4: Prompt and record customer food selection 
    puts "Make your food selection here --> "
    selection = gets().chomp()
