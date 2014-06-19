@@ -1,6 +1,6 @@
 require 'twilio-ruby'
 
-# put your own credentials here
+# put Twilio credentials here
 account_sid = 'AC1450a935aad2a88da38727bef47b5cb9'
 auth_token  = 'f51667295646de2ef0a7a1b489761be1'
 
@@ -8,8 +8,8 @@ auth_token  = 'f51667295646de2ef0a7a1b489761be1'
 client = Twilio::REST::Client.new account_sid, auth_token
 
 
-puts "Welcome to Restaurant720"
-puts "=-=-=-=-=-="
+puts "Welcome to Restaurant720 "
+puts "=-=-=-=-=-=-=-=-=-=-=-=-="
 
 # Initialize the four food hashes for appetizers, entrees, desserts, and drinks 
 appetizers = { "nachos" => 'note', 
@@ -66,7 +66,7 @@ print_function( desserts,   users_order )
 puts " "
 puts "-*-*-*-*-*-*-*-*-*-*-*-*-"
 puts "-*-*-*-*-*-*-*-*-*-*-*-*-"
-# Create array to hold twilio order
+# Create an array to hold customer order to be sent via text message 
 twilio_output = []
 # Print out a summary of customer order 
 puts "Here is a summary of your order: "
@@ -81,8 +81,8 @@ puts "Come again soon!"
 twilio_output << "Come again soon!"
 
 # puts "#{twilio_output}"
-# send sms
-# note to self: must include "1" before the phone number
+# The code below will send the customer order via text messaging. 
+# Note to self: must include "1" before the phone number
 client.account.messages.create(
   :from => '+18182769431',
   :to => '+18187202477',
